@@ -35,7 +35,7 @@ public class Q5_ReverseAlternateKNode {
                 lastCurr.next = curr;
                 prev = lastCurr;
             }
-            // ⏭ Skip k nodes
+            
             else {
                 for (int i = 0; curr != null && i < k; i++) {
                     prev = curr;

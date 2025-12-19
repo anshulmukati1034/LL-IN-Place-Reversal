@@ -19,14 +19,14 @@ public class Q4_RotateList {
             length++;
         }
 
-        // 2️⃣ Normalize k
+       
         k = k % length;
         if (k == 0) return head;
 
-        // 3️⃣ Make circular
+   
         tail.next = head;
 
-        // 4️⃣ Find new tail
+        
         int steps = length - k;
         ListNode newTail = head;
 
@@ -34,7 +34,7 @@ public class Q4_RotateList {
                 newTail = newTail.next;
         }
 
-        // 5️⃣ Break the circle
+      
         ListNode newHead = newTail.next;
         newTail.next = null;
 
